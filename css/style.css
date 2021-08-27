@@ -34,6 +34,16 @@ body{
 	display: block;
 	cursor: pointer;
   }
+  @media screen and(max-width: 768px) {
+	  .dropdown{
+		  color: gold;
+	  }
+	.dropdown-content{
+		position: fixed;
+		z-index: 2000;
+		display: block;
+	}
+}
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
@@ -1144,7 +1154,8 @@ footer .copy-right {
 	.banner .slide-one .btn, .banner .slide-two .btn {display: none !important;}
 	.banner-video .slider .video-header {bottom: 70px;}
 	
-	.meet .meet-map .map-marker img {max-width: 15px !important;}
+	.meet .meet-map .map-marker img {max-width: 15px !important;
+	}
 }
 
 /*
@@ -1155,7 +1166,14 @@ footer .copy-right {
 		border-color: rgba(0,0,0,0.15);
 		box-shadow: none;
 	}
-	
+	.dropdown{
+		color: gold;
+	}
+  .dropdown-content{
+	  position: fixed;
+	  z-index: 2000;
+	  display: block;
+  }
 	.navbar-default .navbar-brand {padding-top: 5px;}
 	.navbar-default .navbar-brand>img {max-width: 140px;}
 	
