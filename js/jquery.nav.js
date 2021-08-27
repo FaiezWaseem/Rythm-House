@@ -105,7 +105,12 @@
 		},
 
 		getHash: function($link) {
-			return $link.attr('href').split('#')[1];
+			try{
+
+				return $link.attr('href').split('#')[1];
+			}catch($){
+				
+			}
 		},
 
 		getPositions: function() {
@@ -199,7 +204,12 @@
 		},
 
 		scrollTo: function(target, callback) {
-			var offset = $(target).offset().top;
+			try{
+
+				var offset = $(target).offset().top;
+			}catch(errr){
+
+			}
 
 			$('html, body').animate({
 				scrollTop: offset

@@ -77,20 +77,20 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="../">Home</a></li>
-								<li><a href="../index.html#featuredalbum">Featured Album</a></li>
+								<li><a onclick="dropmenu('../')">Home</a></li>
+								<li><a onclick="dropmenu('../index.html#featuredalbum')">Featured Album</a></li>
 								<li><a>Join Us</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="../Events/">Events</a></li>
+								<li><a onclick="dropmenu('../Events/')">Events</a></li>
 								<li><a href="#team">Team</a></li>
 								<li><a  class="dropdown">
 									<span>Categories</span>
 									<div class="dropdown-content">
 									<p onclick="alert(this.innerText)">Pop Music</p>
-									<p>Rock Music</p>
-									<p>Sad Music</p>
-									<p>60s Music</p>
-									<p>70s Music</p>
+									<p onclick="dropmenu('../MusicCategory/PopMusic/')">Pop Music</p>
+									<p  onclick="dropmenu('../MusicCategory/RockMusic/')">Rock Music</p>
+									<p  onclick="alert('Hello')">Sad Music</p>
+									<p onclick="dropmenu('../MusicCategory/60sMusic/')">60s Music</p>
+									<p  onclick="dropmenu('../MusicCategory/70sMusic/')">70s Music</p>
 									</div>
 								  </a></li>
 							</ul>
