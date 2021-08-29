@@ -115,6 +115,28 @@ $(function(){
 	});
 });
 function dropmenu($){
-	console.warn($)
 	window.location = $
-  }
+}
+
+var isPlaying = false;
+function playMusic($, is){
+	const myAudio = document.getElementById($) ;
+    isPlaying ? pause(is) : play(is)
+	myAudio.onplaying = function() {
+		isPlaying = true;
+	  };
+	  myAudio.onpause = function() {
+		isPlaying = false;
+	  };
+	  function play(is){
+		myAudio.play();
+		 is.classList.remove('fa-play-circle-o');
+		 is.classList.add('fa-pause-circle-o')
+	  }
+	  function pause(is){
+		myAudio.pause();
+		 is.classList.remove('fa-pause-circle-o');
+		 is.classList.add('fa-play-circle-o')
+	  }
+}
+

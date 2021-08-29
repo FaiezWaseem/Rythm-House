@@ -9,6 +9,7 @@ body{
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
+	cursor:url(https://icons.iconarchive.com/icons/google/noto-emoji-objects/24/62809-guitar-icon.png), auto;
 }
 .dropdown {
 	position: relative;
@@ -43,6 +44,88 @@ body{
 		z-index: 2000;
 		display: block;
 	}
+}
+.shedule-flex{
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.shedule-flex .text-left{
+	margin-left: 10px;
+}
+.audio-info i{
+	cursor:url(amongus-hand.png), auto;
+	font-size: 2.4rem;
+	color: hotpink;
+}
+.schedule-menu{
+	margin-bottom: 30px;
+    background-color: #f7f7f7;
+    padding: 30px 40px;
+    text-align: left;
+    margin-left: 0;
+}
+ul.list-inline li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.festival-info h5 {
+    display: inline;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.festival-info h2 {
+    display: inline;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+element.style {
+}
+a, button, .artists-overlay, .post-icons, .image-overlay, .clients li, .post-content, .festival-info h2, .showcase-overlay, .products, .products i, .gallery-overlay, .time-overlay, .owl-prev, .owl-next, .album-overlay, .products-icons, .btn.btn-default i, .btn.btn-primary i, .controls, .showcase-section i, .vocalist-overlya, .time:before, .client img, .video-overlay, .owl-nav i, .jp-controls:before, .jp-playlist li, .photos-filckr li:hover:before, .recent-image img, .photos-filckr li img {
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+.festival-info .time {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    margin-top: -50px;
+    margin-left: -48px;
+    text-align: center;
+    color: #fff;
+    font-family: 'aller_lightregular';
+}
+.festival-info .time h1{
+	font-size:2rem;
+}
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 20, 91, 0.7);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);}
+.schedule-menu a {
+    font-size: 16px;
+    color: #ed145b;
+    text-transform: capitalize;
+    font-family: 'allerbold';
+}
+.festival-info{
+	background-color: #f7f7f7;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Lato', sans-serif;
@@ -129,6 +212,7 @@ hr{
 	padding: 25px 20px;
 	font-size: 15px;
 	font-weight: 700;
+	cursor:url(amongus-hand.png), auto;
 }
 
 .navbar-default .navbar-toggle .icon-bar {background: #eeeeee;}
@@ -1089,6 +1173,7 @@ footer .social a {
 	font-size: 32px;
 	border: 1px solid transparent;
 	border-radius: 80px;
+	cursor:url(amongus-hand.png), auto;
 	-webkit-transition: all 0.25s linear;
 	-moz-transition: all 0.25s linear;
 	-ms-transition: all 0.25s linear;
