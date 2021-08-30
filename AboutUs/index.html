@@ -7,7 +7,27 @@
 		<meta name="description" content="Rhythm House is a music store in the city which offers not only music but contests and live shows too. It caters to almost all the age groups by providing the CDs, tapes of poems for kids, latest pop music collection for teenagers etc. Rhythm House also caters to a slightly older age group and boasts of the largest collection of regional and devotional music. Besides, if someone wants to pick up a good 60's or 70's rock album, chances are that he will get it here, and in case it’s not available, they will order it within a week">
 		<meta name="keywords" content="rhythm Store , music store">
 		<meta name="author" content="Faiez Waseem">
-		
+		<style>
+		#map {
+			width: 100%;
+			height: 80vh;
+
+		  }	  
+		  .custom-map-control-button {
+			background-color: #fff;
+			border: 0;
+			border-radius: 2px;
+			box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+			margin: 10px;
+			padding: 0 0.5em;
+			font: 400 18px Roboto, Arial, sans-serif;
+			overflow: hidden;
+			height: 40px;
+			cursor: pointer;
+		  }
+		  .custom-map-control-button:hover {
+			background: #ebebeb;
+		  }</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- Styles -->
@@ -25,7 +45,7 @@
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="../img/logo/favicon.ico">
-
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 	</head>
 	
 	<body>
@@ -128,7 +148,7 @@
 	</div>
   </div>
 
-
+  <div id="map"></div>
 			
 			<!-- footer -->
 			<footer>
@@ -168,5 +188,11 @@
 		<script src="../js/html5shiv.js"></script>
 		<!-- Custom JS -->
 		<script src="../js/custom.js"></script>
+		<!-- Location Api -->
+		<script src="../js/geolocation.js"></script>
+		<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe-oqQlm9rgYXGdXoPYiO2FkpbrcnoRkA&callback=initMap&libraries=&v=weekly"
+async
+></script>
 	</body>	
 </html>
